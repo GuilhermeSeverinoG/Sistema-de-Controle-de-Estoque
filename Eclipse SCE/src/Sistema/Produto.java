@@ -2,35 +2,35 @@ package Sistema;
 
 public class Produto {
 	private String nome;
-    private String id;
-    private int quantidade;
+    private int id;
+    private int estoque;
     private double preco;
 
-    public Produto(String nome, String id, int quantidade, double preco) {
+    public Produto(String nome, int id, int estoque, double preco) {
         this.nome = nome;
         this.id = id;
-        this.quantidade = quantidade;
+        this.estoque = estoque;
         this.preco = preco;
     }
     public String getNome() {
         return nome;
     }
-    public String getId() {
+    public int getId() {
         return id;
     }
-    public int getQuantidade() {
-        return quantidade;
+    public int getEstoque() {
+        return estoque;
     }
     public double getPreco() {
         return preco;
     }
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
+    public void setEstoque(int estoque) {
+        this.estoque = estoque;
     }
     public void exibirInfo() {
     	System.out.println("ID: " + id);
         System.out.println("Produto: " + nome);
-        System.out.println("Quantidade: " + quantidade);
+        System.out.println("Estoque: " + estoque);
         System.out.println("Preço: R$" + preco);
         System.out.println("------------------------");
     }
